@@ -9,7 +9,7 @@ export default {
 
     return [
       {
-        path: '/blog',
+        path: '/work',
         getData: () => ({
           posts,
         }),

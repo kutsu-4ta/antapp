@@ -1,8 +1,8 @@
 import React from 'react'
-import yamashita from 'styled-components'
+import Styled from 'styled-components'
 
-const StyledMyHeading = yamashita.h1`
-  color: blue;
+const StyledMyHeading = Styled.h1`
+  color: #dc143c;
   font-size: 36px;
 `;
 

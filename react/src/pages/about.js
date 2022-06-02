@@ -3,8 +3,8 @@ import MyHeading from '../components/MyHeading'
 
 const MyIntro = (props) => {
     return (
-        <div>
-            <MyHeading>あいうえお</MyHeading>
+        <div style={{ textAlign: 'center' }}>
+            <MyHeading>about</MyHeading>
         </div>
     );
 }
