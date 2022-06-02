@@ -1,7 +1,11 @@
 import React from 'react'
+import MyHeading from '../components/MyHeading'
 
-export default () => (
-  <div>
-    <p>React Static is a progressive static site generator for React.</p>
-  </div>
-)
+const MyIntro = (props) => {
+    return (
+        <div>
+            <MyHeading>あいうえお</MyHeading>
+        </div>
+    );
+}
+export default MyIntro;
