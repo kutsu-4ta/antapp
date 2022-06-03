@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'components/Router'
-import Styled from 'styled-components'
+// import { Link } from 'components/Router'
+// import Styled from 'styled-components'
 import MyHeading from "../components/MyHeading";
 
 // import { useRouteData } from 'react-static'
