@@ -19,6 +19,7 @@
     "react-static-plugin-reach-router": "^7.0.10",
     "react-static-plugin-sitemap": "^7.0.10",
     "react-static-plugin-source-filesystem": "^7.5.1",
+    "react-transition-group": "^4.4.2",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

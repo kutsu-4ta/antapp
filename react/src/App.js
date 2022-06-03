@@ -5,6 +5,7 @@ import Styled from 'styled-components';
 import Dynamic from 'containers/Dynamic';
 import Navbar from './components/Navbar';
 import Loading from "./components/Loading";
+import Page from './components/page';
 
 import './app.css'
 
@@ -14,6 +15,7 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
       <Root>
+          <Page/>
           <Navbar/>
           <React.Suspense fallback={<Loading />}>
               <Router>
