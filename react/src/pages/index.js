@@ -1,11 +1,16 @@
 import React from 'react'
 import MyHeading from "../components/MyHeading";
+import Styled from "styled-components";
+
+const StyledTopTitle = Styled.div`
+    padding-top: 10rem;
+`;
 
 const Title = (props) => {
     return (
-        <div style={{ textAlign: 'center' }}>
+        <StyledTopTitle style={{ textAlign: 'center' }}>
             <MyHeading>Antapp</MyHeading>
-        </div>
+        </StyledTopTitle>
     );
 }
 export default Title;

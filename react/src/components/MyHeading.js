@@ -2,7 +2,7 @@ import React from 'react'
 import Styled from 'styled-components'
 
 const StyledMyHeading = Styled.h1`
-  color: #dc143c;
+  color: black;
   font-size: 36px;
 `;
 

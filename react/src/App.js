@@ -1,8 +1,10 @@
 import React from 'react';
 import { Root, Routes, addPrefetchExcludes } from 'react-static';
 import { Link, Router } from 'components/Router';
+import Styled from 'styled-components';
 import Dynamic from 'containers/Dynamic';
 import Navbar from './components/Navbar';
+import Loading from "./components/Loading";
 
 import './app.css'
 
@@ -11,17 +13,15 @@ addPrefetchExcludes(['dynamic'])
 
 function App() {
   return (
-    <Root>
-        <Navbar />
-      <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
-          <Router>
-            <Dynamic path="dynamic" />
-            <Routes path="*" />
-          </Router>
-        </React.Suspense>
-      </div>
-    </Root>
+      <Root>
+          <Navbar/>
+          <React.Suspense fallback={<Loading />}>
+              <Router>
+                  <Dynamic path="dynamic"/>
+                  <Routes path="*"/>
+              </Router>
+          </React.Suspense>
+      </Root>
   )
 }
 
