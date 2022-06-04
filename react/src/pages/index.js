@@ -1,7 +1,12 @@
 import React from 'react'
 import MyHeading from "../components/MyHeading";
 import Styled from "styled-components";
-import Circle from '../components/BackgrounAnimation';
+import BackgroundAnimation from '../components/BackgrounAnimation';
+
+import About from './about.js';
+import Works from './work.js';
+import Contact from './contact';
+import ScrollFader from '../components/Transition/ScrollFader';
 
 const StyledTopTitle = Styled.div`
     padding-top: 10rem;
