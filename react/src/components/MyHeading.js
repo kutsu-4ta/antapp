@@ -14,5 +14,4 @@ const StyledMyHeading = Styled.h1`
 //
 // export default MyHeading;
 
-// 上の例のようにpropsが一つなら省略してアローで書けるゾ。
 export default StyledMyHeading;

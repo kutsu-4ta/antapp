@@ -7,7 +7,7 @@ const containerStyle = {
     height: '3rem'
 };
 
-const page = () => {
+const styledCircle = () => {
     //マウントの状態を管理
     const [mount, setMount] = useState(true);
 
@@ -162,7 +162,7 @@ const page = () => {
             <CSSTransition
                 in={mount}
                 timeout={2000}
-                mountOnEnter
+                mountOnEnter={true}
                 appear={true}
             >
                 {(state) => (
@@ -175,4 +175,4 @@ const page = () => {
         </>
     )
 }
-export default page
+export default styledCircle

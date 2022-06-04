@@ -9,14 +9,32 @@ const StyledTopTitle = Styled.div`
 
 const Title = () => {
     return (
-        <div>
+        <>
             <div>
-                <StyledTopTitle style={{textAlign: 'center', position: 'relative'}}>
+                <StyledTopTitle style={{marginTop: '4rem', textAlign: 'center', position: 'relative'}}>
                     <MyHeading>Antapp</MyHeading>
                 </StyledTopTitle>
+                <BackgroundAnimation style={{marginTop: '10rem'}} />
             </div>
-            <Circle />
-        </div>
+
+            <div style={{height: '1000px'}}>
+                <div style={{marginTop: '15rem'}}>
+                    <ScrollFader>
+                        <About/>
+                    </ScrollFader>
+                </div>
+                <div style={{marginTop: '10rem'}}>
+                    <ScrollFader>
+                        <Works/>
+                    </ScrollFader>
+                </div>
+                <div style={{marginTop: '10rem'}}>
+                    <ScrollFader>
+                        <Contact/>
+                    </ScrollFader>
+                </div>
+            </div>
+        </>
     );
 }
 export default Title;

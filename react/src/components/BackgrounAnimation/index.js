@@ -1,10 +1,12 @@
 import React from "react";
 import StyledCircle from './Circle'
 
-const BackgroundCircle = () => {
+const BackgroundAnimation = () => {
     return (
-        <StyledCircle></StyledCircle>
+        <>
+            <StyledCircle></StyledCircle>
+        </>
     );
 };
 
-export default BackgroundCircle;
+export default BackgroundAnimation;
